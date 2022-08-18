@@ -1,5 +1,8 @@
+import flask
+
 from web_app import app
 
 @app.route("/")
 def home():
-    return "<h1>Hello world </h1>"
+    print("server fire")
+    return flask.render_template("index.html")
