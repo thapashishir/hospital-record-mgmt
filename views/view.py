@@ -6,3 +6,8 @@ from web_app import app
 def home():
     print("server fire")
     return flask.render_template("index.html")
+
+
+@app.route("/appointments")
+def add():
+    return flask.render_template("appointments.html")

@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+{% block content %}
+<h2>Appointments</h2>
+<div class="row">
+  <div class="col-md-4">
+    <label class="sr-only" for="inlineFormInputGroupUsername2">Patient Name</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="name">
+    </div>
+  </div>
+  <div class="col-md-2">
+    <button type="submit" class="btn btn-primary mt-4">Search</button>
+    <button type="submit" class="btn btn-primary mt-4">Add</button>
+  </div>
+   
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Patient Name</th>
+            <th scope="col">Doctor Name</th>
+            <th scope="col">Appointment Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Jhon</td>
+            <td>2022-07-19</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}
