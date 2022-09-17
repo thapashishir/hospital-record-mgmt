@@ -27,12 +27,14 @@
           </tr>
         </thead>
         <tbody>
+          {% for appointment in appointments %}
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Jhon</td>
-            <td>2022-07-19</td>
+            <td>{{appointment.id}}</td>
+            <td>{{appointment.patient_name}}</td>
+            <td>{{appointment.doctor_name}}</td>
+            <td>{{appointment.appointment_date}}</td>
           </tr>
+          {% endfor %}
         </tbody>
       </table>
     </div>
