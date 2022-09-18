@@ -1,0 +1,3 @@
+https://flask.palletsprojects.com/en/2.2.x/tutorial/
+https://www.tutorialspoint.com/sqlite/sqlite_python.htm
+https://www.tutorialspoint.com/sqlite/index.htm

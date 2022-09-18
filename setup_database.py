@@ -1,4 +1,5 @@
-from web_app import db_conn
+from web_app import get_db_conection
+db_conn = get_db_conection()
 
 sql = """
 CREATE TABLE IF NOT EXISTS appointments(
