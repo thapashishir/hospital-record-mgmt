@@ -24,6 +24,7 @@
             <th scope="col">Patient Name</th>
             <th scope="col">Doctor Name</th>
             <th scope="col">Appointment Date</th>
+            <th scope="col" colspan="2">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -33,6 +34,8 @@
             <td>{{appointment.patient_name}}</td>
             <td>{{appointment.doctor_name}}</td>
             <td>{{appointment.appointment_date}}</td>
+            <td><a href="/appointment/edit/{{appointment.id}}">Edit</a></td>
+            <td><a href="/appointment/delete/{{appointment.id}}">Del</a></td>
           </tr>
           {% endfor %}
         </tbody>

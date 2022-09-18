@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="row">
+    <h4>Edit Appointment</h4>
+    <div class="col-md-6">
+        <form method="POST" action="/appointment/edit">
+            <input type="hidden"  name="id" value="{{appointment.id}}"/>
+            <div class="mb-3">
+              <label class="form-label">Patient Name</label>
+              <input type="text" class="form-control" name="patient_name" value="{{appointment.patient_name}}">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Doctor Name</label>
+              <input type="text" class="form-control" name="doctor_name" value="{{appointment.doctor_name}}">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Appointment Date</label>
+              <input type="date" class="form-control" name="appointment_date" value="{{appointment.appointment_date}}">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+
+</div>
+{% endblock %}
