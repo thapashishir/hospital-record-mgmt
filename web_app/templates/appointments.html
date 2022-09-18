@@ -2,15 +2,20 @@
 {% block content %}
 <h2>Appointments</h2>
 <div class="row">
-  <div class="col-md-4">
-    <label class="sr-only" for="inlineFormInputGroupUsername2">Patient Name</label>
-    <div class="input-group mb-2 mr-sm-2">
-      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="name">
-    </div>
+  <div class="col-md-10">
+    <form method="POST" action="/appointments/search">
+      <div class="row">
+        <div class="col-md-4">
+          <input type="text" class="form-control" name="patient_name" placeholder="name">
+        </div>
+        <div class="col-md-1">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </form>
   </div>
   <div class="col-md-2">
-    <button type="submit" class="btn btn-primary mt-4">Search</button>
-    <a href="/appointment/add" class="btn btn-primary mt-4">Add</a>
+    <a href="/appointment/add" class="btn btn-primary float-right">Add</a>
   </div>
    
 </div>
